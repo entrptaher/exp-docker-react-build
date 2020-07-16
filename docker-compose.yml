@@ -1,10 +1,9 @@
 version: '3.7'
 services:
-  ruhul-bad-boy:
+  dashboard:
+    image: test_dashboard
     build:
       context: .
       args:
         - REACT_APP_TEST=${REACT_APP_TEST}
-    ports:
-      - 5000:5000
-    command: serve -s build
+    command: yarn run build
