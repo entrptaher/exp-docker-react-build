@@ -10,13 +10,8 @@ ENV_FILE=.env.prod docker-compose -f docker-compose.build.yml build
 ### Step 2
 Uploading the image in docker hub
 ```bash
-# Add tag on repo
-docker tag local_image_name repo_name:tag_name
-# example: docker tag test_dashboard naimur103/test_dashboard:latest
-
 # Push to repo
-docker push repo_name:tag_name
-# example: docker push naimur103/test_dashboard:latest
+docker-compose -f docker-compose.build.yml push
 ``` 
 NOTE: If docker asks for login then login with your docker creds in terminal
 
