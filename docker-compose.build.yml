@@ -6,4 +6,6 @@ services:
       context: .
       args:
         - REACT_APP_TEST=${REACT_APP_TEST}
+    ports:
+      - "1234:1234"
     command: yarn run build

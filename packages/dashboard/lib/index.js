@@ -38,7 +38,10 @@ if (isDev) {
 		res.sendFile(path.resolve(`${__dirname}/../dist/index.html`));
 	});
 
-	server.listen(port, () => {
+	// server.listen(port, () => {
+	// 	console.log(`Client server running at ${url}`);
+	// });
+	app.listen(port, () => {
 		console.log(`Client server running at ${url}`);
 	});
 }

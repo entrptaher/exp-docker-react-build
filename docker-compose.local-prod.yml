@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  application:
+    image: naimur103/test_dashboard
+    ports:
+      - "1234:1234"
+    command: yarn start

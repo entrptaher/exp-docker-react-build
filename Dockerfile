@@ -28,4 +28,6 @@ ENV REACT_APP_TEST $REACT_APP_TEST
 
 RUN yarn run build
 
+EXPOSE 1234
+
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
